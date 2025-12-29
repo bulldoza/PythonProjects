@@ -1,0 +1,91 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <!-- INSERT SCRIPT HERE -->
+     <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "ed0e0b53-e836-4c42-8ec9-546aacb1f52c",
+        apiHost: "http://localhost:3000",
+    })
+</script>
+
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talespinner – Storytelling Companion</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f5f2ec;
+        color: #333;
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+      main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        width: 100%;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: 1.1rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      #chatbot-container {
+        margin-top: 2rem;
+        width: 100%;
+        max-width: 600px;
+        height: 500px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      footer {
+        padding: 1rem;
+        font-size: 0.9rem;
+        color: #777;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Welcome to Talespinner</h1>
+        <p>
+          Where every conversation can spark a story, and every story leads to
+          wonder. Meet our storytelling guide below.
+        </p>
+      </header>
+    </main>
+
+    <footer>&copy; 2025 Talespinner. All rights reserved.</footer>
+  </body>
+</html>
